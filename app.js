@@ -3,7 +3,7 @@ const city = encodeURIComponent(document.getElementById("cityInput").value);
     const apiKey = '9c67e8632075097fcce308f67a30978a';  // Replace this with your OpenWeatherMap API key
 
     if (!city) {
-        showError("Please enter a city name.");
+        showError("Please enter a city name..........");
         return;
     }
 

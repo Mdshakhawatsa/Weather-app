@@ -1,21 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Weather Forecast Dashboard</title>
+    <title>Weather App</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-700 min-h-screen flex items-center justify-center">
+
+<body class="bg-gray-700 min-h-screen lg:flex lg:items-center justify-center">
     <div class="max-w-lg w-full bg-gradient-to-r from-indigo-500 via-purple-300 to-red-200 shadow-lg rounded-lg p-8">
         <h1 class="text-2xl font-bold text-center text-blue-600 mb-8">Weather Forecast</h1>
 
         <!-- Search form -->
         <div class="flex mb-4">
-            <input id="cityInput" type="text" class="w-full p-2 border rounded-md focus:outline-none" placeholder="Enter city name...">
-            <button id="getWeatherBtn" class="items-center ml-4 justify-center flex  w-10 bg-white bg-blue-600 text-white rounded-md hover:bg-blue-100">
-                <img class=" w-5" src="search.png" alt="">
+            <input id="cityInput" type="text" class="w-full p-2 border rounded-md focus:outline-none"
+                placeholder="Enter city name...">
+
+
+
+            <button id="getWeatherBtn" class="btn ml-3 " >
+                <img class="text-white w-7  " src="search.png" alt="">
             </button>
+
+
+            <!-- <button id="getWeatherBtn"
+                class="items-center ml-4 justify-center flex  w-10 bg-white bg-blue-600 text-white rounded-md hover:bg-blue-100">
+                <img class=" w-5" src="search.png" alt="">
+            </button> -->
         </div>
 
         <!-- Weather info -->
@@ -41,4 +54,5 @@
     <!-- JavaScript -->
     <script src="app.js"></script>
 </body>
+
 </html>
